@@ -1,13 +1,180 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Стартовый шаблон</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Путешествие по Европе</title>
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
-  <h1>Добро пожаловать в Лигу А.</h1>
+<body class="page__body">
+  <header class="page__header">
+    <div class="page__header__wrapper">
+      <img class="page__header__logo" src="img/icons/header-logo.svg" alt="Логотип" width="57" height="22">
+      <nav class="page__header__nav">
+        <ul class="page__header__nav-list">
+          <li class="page__header__nav-item">
+            <a href="" class="page__header__nav-link">О путешествии</a>
+          </li>
+          <li class="page__header__nav-item">
+            <a href="" class="page__header__nav-link">Цены</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="page__header__tel" href="">+7 (499) -784-684-46</a>
+    </div>
+  </header>
+  <main class="page-main">
+    <div class="greeting-block">
+      <div class="greeting-block__wrapper">
+        <h1 class="greeting-block__heading">Путешествие по Европе</h1>
+        <p class="greeting-block__text">В этом туре вы откроете для себя Европу в новом цвете. Вас ждет: море, горы, а также потрясающая красота природы.</p>
+        <a class="greeting-block__button" href="">Смотреть тур</a>
+      </div>
+    </div>
+    <section class="catalog">
+      <h2 class="catalog__heading">Места посещения</h2>
+      <p class="catalog__text">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
+      <ul class="catalog__list">
+        <li class="catalog__item">
+          <img class="catalog__image" src="" alt="">
+          <h3 class="catalog__subheading">Греция</h3>
+        </li>
+        <li class="catalog__item">
+          <img class="catalog__image" src="" alt="">
+          <h3 class="catalog__subheading">Албания</h3>
+        </li>
+        <li class="catalog__item">
+          <img class="catalog__image" src="" alt="">
+          <h3 class="catalog__subheading">Македония</h3>
+        </li>
+        <li class="catalog__item">
+          <img class="catalog__image" src="" alt="">
+          <h3 class="catalog__subheading">Черногория</h3>
+        </li>
+        <li class="catalog__item">
+          <img class="catalog__image" src="" alt="">
+          <h3 class="catalog__subheading">Хорватия</h3>
+        </li>
+      </ul>
+    </section>
+    <section class="offer">
+      <ul class="offer__option-list">
+        <li class="offer__option">
+          <a class="offer__tab" href="">Греция</a>
+        </li>
+        <li class="offer__option">
+          <a class="offer__tab" href="">Албания</a>
+        </li>
+        <li class="offer__option">
+          <a class="offer__tab" href="">Македония</a>
+        </li>
+        <li class="offer__option">
+          <a class="offer__tab" href="">Черногория</a>
+        </li>
+        <li class="offer__option">
+          <a class="offer__tab" href="">Хорватия</a>
+        </li>
+      </ul>
+      <div class="offer__country-offer country-offer country-offer--greece">
+        <div class="country-offer__container">
+          <h2 class="country-offer__heading">Греция</h2>
+          <p class="country-offer__text">На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры. </p>
+          <button class="country-offer__button">Купить тур сейчас</button>
+        </div>
+        <div class="country-offer__review review">
+          <img class="review__image" src="" alt="">
+          <div class="review__container">
+            <h3 class="review__heading">Отзывы</h3>
+            <blockquote class="review__text">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света! </p>
+            <div class="review__author-block">
+              <img class="review__author-image" src="" alt="">
+              <p class="review__author-name">Влада Голицина</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="offer__price-container">
+        <ul class="offer__list offer-list">
+          <li class="offer-list__item">
+            <h3 class="offer-list__heading">Комплексный<span class="offer-list__price">$1999</span></h3>
+            <p class="offer-list__text">Ознакомьтесь с перечнем того, что входит в данный пакет </p>
+            <ul class="offer-list__advantages-list">
+              <li class="offer-list__advantage">Разработанный маршрут с гидом группы</li>
+              <li class="offer-list__advantage">Перелет, трансфер и проживание в отелях</li>
+              <li class="offer-list__advantage">Завтраки, ужины в отелях и ланчи на природе</li>
+              <li class="offer-list__advantage">Экскурсии по удивительно красивым местам Европы</li>
+            </ul>
+            <button class="offer-list__button">Купить тур сейчас</button>
+          </li>
+          <li class="offer-list__item">
+            <h3 class="offer-list__heading">Экономный<span class="offer-list__price">$1399</span></h3>
+            <p class="offer-list__text">Ознакомьтесь с перечнем того, что входит в данный пакет </p>
+            <ul class="offer-list__advantages-list">
+              <li class="offer-list__advantage">Разработанный маршрут с гидом группы</li>
+              <li class="offer-list__advantage">Перелет и трансфер</li>
+              <li class="offer-list__advantage">Проживание в хостелах при отелях</li>
+              <li class="offer-list__advantage">Только завтраки в отелях</li>
+              <li class="offer-list__advantage">Экскурсии по удивительно красивым местам Европы</li>
+            </ul>
+            <button class="offer-list__button">Купить тур сейчас</button>
+          </li>
+        </ul>
+        <div class="offer__price-description-block">
+          <h2 class="offer__price-heading"></h2>
+          <p class="offer__price-descrioption-text">Специально для Вас  мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших потребностей и возможностей. Выберите для себя лучший вариант отпуска и отдохните на все 100%! </p>
+          <p class="offer__contact">Свяжитесь с нами</p>
+          <a class="offer__tel" href="">+7 (499) -784-684-46</a>
+        </div>
+      </div>
+    </section>
+    <div class="additional-info-block">
+      <form action="" class="additional-info-block__form info-form">
+        <p class="info-form__heading">У Вас остались вопросы?</p>
+        <p class="info-form__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
+        <div class="info-form__input-wrapper">
+          <div class="info-form__tel-input-block">
+            <span class="info-form__tel-first-number">+7</span>
+            <input type="text" class="info-form__input">
+          </div>
+          <input type="email" class="info-form__input">
+        </div>
+        <input type="submit" class="info-form__submit-button">
+      </form>
+    </div>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__block">
+        <h2 class="page-footer__subheading">Следующие путешествия</h2>
+        <ul class="page-footer__list">
+          <li class="page-footer__list-element">Марсель</li>
+          <li class="page-footer__list-element">Ним</li>
+          <li class="page-footer__list-element">Монпелье</li>
+          <li class="page-footer__list-element">Барселона</li>
+          <li class="page-footer__list-element">Пальма</li>
+          <li class="page-footer__list-element">Сардиния</li>
+          <li class="page-footer__list-element">Палермо</li>
+          <li class="page-footer__list-element">Катания</li>
+          <li class="page-footer__list-element">Неаполь</li>
+          <li class="page-footer__list-element">Рим</li>
+          <li class="page-footer__list-element">Корс</li>
+          <li class="page-footer__list-element">Ницца</li>
+          <li class="page-footer__list-element">Монако</li>
+          <li class="page-footer__list-element">Динь-Ле-Бен</li>
+          <li class="page-footer__list-element">Гренобль</li>
+        </ul>
+      </div>
+      <div class="page-footer__block">
+        <h2 class="page-footer__subheading">Наши контакты</h2>
+        <a href="" class="page-footer__contacts">puteshestviemechta@gmail.ru</a>
+        <a href="" class="page-footer__contacts">+7 (499) -784-684-46</a>
+      </div>
+      <div class="page-footer__block">
+        <h2 class="page-footer__subheading">Корпоративные путешествия</h2>
+        <p class="page-footer__text">Также вы можете заказать индивидуальное путешествие под вашу компанию. Подобные туры очень сближают компанию, помогают поддерживать корпоративный дух, а также являются оличным времяпрепровождением</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

@@ -1,0 +1,9 @@
+.page {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.page__body {
+  min-width: $mobile-width;
+  max-width: 1000px;
+  margin: 0;
+}
