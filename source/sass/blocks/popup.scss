@@ -1,0 +1,143 @@
+.popup-info {
+  display: none;
+
+  &--opened {
+    display: block;
+    z-index: 10;
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    margin-left: -160px;
+    padding: 100px 16px 185px;
+    width: 320px;
+    min-height: 568px;
+    background-color: $white;
+    text-align: center;
+  }
+}
+
+.popup-info__block {
+  position: relative;
+}
+
+.popup-info__image {
+  display: none;
+}
+
+.popup-info__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: $white;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 31px;
+    height: 1px;
+    top: 25px;
+    right: 10px;
+    background-color: rgba(20, 21, 23, 0.2);
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.popup-info__heading {
+  font-size: 25px;
+  line-height: 43px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 50px;
+  color: $black-additional;
+}
+
+.popup-info__input {
+  width: 100%;
+  padding: 15px 0 15px 15px;
+  margin: 0 0 20px;
+  border: 1px solid $text-color;
+  font-size: 14px;
+  line-height: 17px;
+
+  &::placeholder {
+    font-size: 14px;
+    line-height: 17px;
+    color: $black-dark;
+    letter-spacing: 0.8px;
+  }
+
+  &--tel {
+    padding-left: 50px;
+  }
+}
+
+.popup-info__input-block--tel {
+  position: relative;
+}
+
+.popup-info__tel-first-number {
+  border: none;
+  position: absolute;
+  top: 16px;
+  left: 24px;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.popup-info__submit-button {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 2px;
+  width: 100%;
+  padding: 19px 0;
+  text-transform: uppercase;
+}
+
+@media (min-width: $desktop-width) {
+  .popup-info {
+    &--opened {
+      display: flex;
+      justify-content: start;
+      width: 728px;
+      min-height: 442px;
+      padding: 0;
+      top: 25%;
+      left: 50%;
+      margin-left: -221px;
+
+      .popup-info__image {
+        display: block;
+      }
+    }
+
+    .popup-info__block {
+      padding: 70px 60px 0;
+      background-color: $light-grey;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .popup-info__toggle {
+      background-color: transparent;
+    }
+
+    .popup-info__submit-button {
+      width: 176px;
+      align-self: center;
+    }
+  }
+}

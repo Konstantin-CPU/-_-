@@ -1,0 +1,64 @@
+.successful-submit {
+  display: none;
+}
+
+.successful-submit--opened {
+  display: flex;
+  position: fixed;
+  top: 50%;
+  margin-top: -110px;
+  left: 50%;
+  margin-left: -160px;
+  width: 320px;
+  height: 220px;
+  background-color: $light-grey;
+  flex-direction: column;
+  justify-content: center;
+
+  .successful-submit__toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 31px;
+      height: 1px;
+      top: 25px;
+      right: 10px;
+      background-color: rgba(20, 21, 23, 0.2);
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+.successful-submit__text {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 43px;
+  text-align: center;
+  color: $black-additional;
+}
+
+@media (min-width: $desktop-width) {
+  .successful-submit--opened {
+    width: 728px;
+    height: 444px;
+    margin-top: -364px;
+    margin-left: -222px;
+  }
+}

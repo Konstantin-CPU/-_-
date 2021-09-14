@@ -1,7 +1,9 @@
-root: true
+{
+  "parserOptions": {
+      "ecmaVersion": 2017
+  },
 
-env:
-  browser: true
-
-extends:
-  "htmlacademy/es5"
+  "env": {
+      "es6": true
+  }
+}

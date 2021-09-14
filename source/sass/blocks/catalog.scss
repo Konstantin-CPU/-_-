@@ -1,0 +1,165 @@
+.catalog {
+  text-align: center;
+  padding: 0 16px;
+  margin-bottom: 40px;
+}
+
+.catalog__heading {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: $black-dark;
+}
+
+.catalog__text {
+  color: $text-color;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.4px;
+  margin-bottom: 20px;
+}
+
+.catalog__item {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.catalog__image {
+  width: 100%;
+  height: 425px;
+  z-index: 1;
+  object-fit: cover;
+}
+
+.catalog__subheading {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -107px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: 0.4px;
+  width: 215px;
+  background-color: $white;
+  color: $black;
+  padding: 17px 30px;
+}
+
+.catalog__hover-button {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    padding: 0 76px;
+  }
+
+  .catalog__heading {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+    letter-spacing: 1.5px;
+  }
+
+  .catalog__text {
+    max-width: 350px;
+    margin: 0 auto 40px;
+  }
+
+  .catalog__item {
+    margin-bottom: -4px;
+  }
+
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 95px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    max-width: 1170px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 0;
+  }
+
+  .catalog__heading {
+    font-size: 55px;
+    line-height: 80px;
+    width: 400px;
+    margin-bottom: 65px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -35px;
+      left: 0;
+      width: 230px;
+      height: 4px;
+      background-color: $red-main;
+    }
+  }
+
+  .catalog__text {
+    margin: 0 0 55px;
+  }
+
+  .catalog__item {
+    margin-bottom: 40px;
+  }
+
+  .catalog__hover-button {
+    display: none;
+  }
+
+  .catalog__link {
+    position: relative;
+    display: block;
+    height: 100%;
+
+    &:hover {
+      &::before {
+        background-color: $text-color2;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+      }
+
+      .catalog__hover-button {
+        display: block;
+        position: absolute;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 2px;
+        padding: 30px 25px;
+        border: 1px solid rgba(255, 255, 255, 0.7);
+        background-color: transparent;
+        text-transform: uppercase;
+        top: 177px;
+        left: 42px;
+        color: $white;
+        z-index: 11;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .catalog__list {
+    gap: 60px;
+    margin-bottom: 85px;
+  }
+}

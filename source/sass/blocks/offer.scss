@@ -1,0 +1,71 @@
+.offer__option-list-container {
+  padding: 0 16px;
+}
+
+.offer__option-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  border-bottom: 1px solid $text-color;
+  padding: 0 0 15px 3px;
+  overflow-x: auto;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.offer__option:not(:last-child) {
+  margin-right: 100px;
+}
+
+.offer__tab {
+  color: $text-color;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+}
+
+.offer__tab--active {
+  color: $red-main;
+}
+
+@media (min-width: $tablet-width) {
+  .offer__option-list {
+    margin: 0 auto 30px;
+    max-width: 768px;
+  }
+
+  .offer__tab {
+    letter-spacing: 1px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .offer {
+    max-width: 1170px;
+    margin: 0 auto;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 120px;
+      left: -140px;
+      width: 1450px;
+      height: 1090px;
+      background-image: url("../../img/icons/europe-map.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
+  }
+
+  .offer__option-list {
+    max-width: 900px;
+    margin: 0 auto 65px 0;
+  }
+
+  .offer__option-list-container {
+    padding: 0;
+  }
+}
