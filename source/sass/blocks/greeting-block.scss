@@ -53,6 +53,10 @@
     height: 18px;
     background: url("../../img/icons/arrow-down.svg") no-repeat 50%;
   }
+
+  &:hover {
+    background-color: $focus-color;
+  }
 }
 
 @media (min-width: $tablet-width) {

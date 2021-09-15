@@ -85,6 +85,19 @@
 
 .popup-info__input-block--tel {
   position: relative;
+
+  &::before {
+    content: "*";
+    position: absolute;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 21px;
+    top: 5px;
+    left: 15px;
+    width: 6px;
+    height: 6px;
+    color: $red-main;
+  }
 }
 
 .popup-info__tel-first-number {
